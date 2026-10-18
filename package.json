@@ -1,0 +1,27 @@
+{
+  "name": "moodle-estudos",
+  "version": "1.0.0",
+  "description": "Copia o conteúdo das disciplinas do Moodle para uma pasta local, para estudar com o Claude Code",
+  "scripts": {
+    "sync": "tsx src/sync.ts",
+    "atividade": "tsx src/atividade.ts",
+    "check": "tsx src/check.ts",
+    "mock": "tsx mock/server.ts",
+    "typecheck": "tsc"
+  },
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "jszip": "^3.10.2",
+    "mammoth": "^1.13.0",
+    "playwright": "^1.64.1",
+    "tsx": "^4.23.15",
+    "turndown": "^7.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/turndown": "^5.0.6",
+    "typescript": "^7.0.2"
+  }
+}
